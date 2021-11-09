@@ -1,5 +1,5 @@
 # brushbots_simulator
-Simulator for a swarm of brushbots
+Simulator for a swarm of brushbots. Updates available on [GitHub](https://github.com/brushbots/brushbots_simulator).
 
 ## Linux/macOS
 
@@ -26,7 +26,7 @@ deactivate
 
 ### 1. Download and install python
 
-Version 3.7.9 for 64-bit OS available [here](https://www.python.org/ftp/python/3.7.9/python-3.7.9-amd64.exe)
+Version 3.7.9 for 64-bit OS available [here](https://www.python.org/ftp/python/3.7.9/python-3.7.9-amd64.exe).
 
 ### 2. Setup (to be exectued only the very first time)
 
