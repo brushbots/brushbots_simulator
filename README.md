@@ -49,4 +49,9 @@ deactivate
 
 ## Write your own script
 
-Starting from one of the example scripts, write your own function `compute_velocities_and_leds` to compute velocity and led commands to control the robots!
+Starting from one of the example scripts, write your own function `compute_velocities_and_leds` to let the robots move and light up their leds!
+
+## Support
+
+Please email quixoticrobotics@gmail.com for support.
+
