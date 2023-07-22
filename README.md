@@ -1,5 +1,5 @@
 # brushbots_simulator
-Simulator for a swarm of brushbots
+Simulator for a swarm of brushbots. Updates available on [GitHub](https://github.com/brushbots/brushbots_simulator).
 
 ## Linux/macOS
 
@@ -26,7 +26,7 @@ deactivate
 
 ### 1. Download and install python
 
-Version 3.7.9 for 64-bit OS available [here](https://www.python.org/ftp/python/3.7.9/python-3.7.9-amd64.exe)
+Version 3.7.9 for 64-bit OS available [here](https://www.python.org/ftp/python/3.7.9/python-3.7.9-amd64.exe).
 
 ### 2. Setup (to be exectued only the very first time)
 
@@ -49,4 +49,9 @@ deactivate
 
 ## Write your own script
 
-Starting from one of the example scripts, write your own function `compute_velocities_and_leds` to compute velocity and led commands to control the robots!
+Starting from one of the example scripts, write your own function `compute_velocities_and_leds` to let the robots move and light up their leds!
+
+## Support
+
+Please email quixoticrobotics@gmail.com for support.
+
