@@ -137,6 +137,19 @@ class BrushbotSimulator:
             self.robot_poses[id].orientation.z = np.sin(th_i/2.0)
             self.robot_poses[id].orientation.w = np.cos(th_i/2.0)
 
+            # collision effect (not efficient, but stable)
+            for j in range(self.N_AGENTS):
+                if not i == j:
+                    id_j = self.ID_ROBOTS[j]
+                    x_j =  self.robot_poses[id_j].position.x
+                    y_j =  self.robot_poses[id_j].position.y
+                    r_ij = np.array([self.robot_poses[id].position.x - x_j, self.robot_poses[id].position.y - y_j])
+                    r_ij_norm = np.linalg.norm(r_ij)
+                    diff_r_ij = r_ij_norm - 2 * self.ROBOT_RADIUS
+                    if diff_r_ij < 0:
+                        self.robot_poses[id].position.x = self.robot_poses[id].position.x - 0.5 * diff_r_ij * r_ij[0] / r_ij_norm
+                        self.robot_poses[id].position.y = self.robot_poses[id].position.y - 0.5 * diff_r_ij * r_ij[1] / r_ij_norm
+
             # boundary effect
             if self.robot_poses[id].position.x > 0.5 * self.ENVIRONMENT_DIMENSIONS[0] - self.ROBOT_RADIUS:
                 self.robot_poses[id].position.x = 0.5 * self.ENVIRONMENT_DIMENSIONS[0] - self.ROBOT_RADIUS
